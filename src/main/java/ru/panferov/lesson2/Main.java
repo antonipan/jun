@@ -1,17 +1,15 @@
-package ru.panferov.lesson02;
+package ru.panferov.lesson2;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException,
                                             InvocationTargetException,
                                             InstantiationException,
                                             IllegalAccessException {
-        Class <?> car = Class.forName("ru.panferov.lesson02.Car");
+        Class <?> car = Class.forName("ru.panferov.lesson2.Car");
         Constructor<?> [] constructors = car.getConstructors();
         System.out.println(constructors);
         Object gaz = constructors[0].newInstance("ГАЗ");

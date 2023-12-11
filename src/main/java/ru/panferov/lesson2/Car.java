@@ -1,4 +1,4 @@
-package ru.panferov.lesson02;
+package ru.panferov.lesson2;
 
 public class Car {
     private String name;
